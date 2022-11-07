@@ -21,4 +21,12 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\workspace\tmp\BoincWatcher\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\workspace\tmp\BoincWatcher\.editorconfig" />
+  </ItemGroup>
+
 </Project>
