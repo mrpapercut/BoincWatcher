@@ -2,19 +2,15 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace BoincWatcher
-{
-    internal class BoincActions
-    {
+namespace BoincWatcher {
+    internal class BoincActions {
         private AppConfig AppConfig;
 
-        public void SetConfig(AppConfig appConfig)
-        {
+        public void SetConfig(AppConfig appConfig) {
             AppConfig = appConfig;
         }
 
-        private Process GetBoincProcess()
-        {
+        private Process GetBoincProcess() {
             Process p = new();
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.FileName = AppConfig.BoincCmdPath;
@@ -22,8 +18,7 @@ namespace BoincWatcher
             return p;
         }
 
-        public void GetState()
-        {
+        public void GetState() {
             string state = "";
 
             Process Boinc = GetBoincProcess();
@@ -37,13 +32,11 @@ namespace BoincWatcher
             ProcessState(state);
         }
 
-        private void ProcessState(string state)
-        {
+        private void ProcessState(string state) {
             // Submit relevant info to central db
         }
 
-        public void GetTasks()
-        {
+        public void GetTasks() {
             string tasks = "";
 
             Process Boinc = GetBoincProcess();
@@ -57,8 +50,7 @@ namespace BoincWatcher
             ProcessTasks(tasks);
         }
 
-        private void ProcessTasks(string alltasks)
-        {
+        private void ProcessTasks(string alltasks) {
             // Loop through contents to parse individual BoincTasks
             // Then add them to a list
             // Remove finished (completed/aborted) tasks from list (cleanup in case they weren't removed already)
@@ -70,24 +62,21 @@ namespace BoincWatcher
             var culture = (CultureInfo)CultureInfo.CurrentCulture.Clone();
             culture.NumberFormat.NumberDecimalSeparator = ".";
 
-            for (int i = 0; i < tasks.Length; i++)
-            {
+            for (int i = 0; i < tasks.Length; i++) {
                 if (tasks[i].StartsWith("\r\n=")) continue;
 
                 string[] tasklines = tasks[i].Split("\r\n");
 
                 BoincTask boincTask = new();
 
-                foreach (string line in tasklines)
-                {
+                foreach (string line in tasklines) {
                     string cleanStr = line.Trim();
 
                     Match match = lineRE.Match(cleanStr);
 
                     string value = match.Groups[2].Value;
 
-                    switch (match.Groups[1].Value)
-                    {
+                    switch (match.Groups[1].Value) {
                         case "name":
                             boincTask.Name = value;
                             break;
@@ -201,8 +190,7 @@ namespace BoincWatcher
             // If a task fails to parse, log it to a file per workunit
         }
 
-        public void HandleGenefer(object sender, FileSystemEventArgs e, string filecontents)
-        {
+        public void HandleGenefer(object sender, FileSystemEventArgs e, string filecontents) {
             string createdOrChanged = (e.ChangeType == WatcherChangeTypes.Created) ? "created" : "changed";
 
             AppUtils.LogToFile($"Genefer file {e.Name} {createdOrChanged}\nContents:\n{filecontents}", "genefer.txt");

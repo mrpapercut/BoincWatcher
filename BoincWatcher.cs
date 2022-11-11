@@ -2,10 +2,8 @@
 
 using Timer = System.Timers.Timer;
 
-namespace BoincWatcher
-{
-    internal class BoincWatcher
-    {
+namespace BoincWatcher {
+    internal class BoincWatcher {
         static Timer taskTimer = new();
         static Timer stateTimer = new();
 
@@ -15,8 +13,7 @@ namespace BoincWatcher
 
         static List<BoincTask> boincTasks = new();
 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             AppConfig = new AppConfig();
             AppConfig.LoadConfig();
 
@@ -56,50 +53,38 @@ namespace BoincWatcher
             Console.ReadLine();
         }
 
-        private static void OnCreated(object sender, FileSystemEventArgs e)
-        {
+        private static void OnCreated(object sender, FileSystemEventArgs e) {
             if (e.Name == null
                 || e.Name.StartsWith("slideshow")
                 || e.Name.StartsWith("stat_icon")
                 || e.Name.EndsWith("cert")
                 || e.Name.StartsWith("platform_nvidia")
-                || e.FullPath.EndsWith(".exe"))
-            {
+                || e.FullPath.EndsWith(".exe")) {
                 return;
             }
 
-            try
-            {
+            try {
                 string filecontents = File.ReadAllText(e.FullPath);
 
-                if (e.Name.StartsWith("genefer"))
-                {
+                if (e.Name.StartsWith("genefer")) {
                     BoincActions.HandleGenefer(sender, e, filecontents);
-                }
-                else
-                {
+                } else {
                     AppUtils.LogToFile($"Created: {e.FullPath} ({e.GetType()})");
-                    if (filecontents.Length < 500)
-                    {
+                    if (filecontents.Length < 500) {
                         AppUtils.LogToFile($"Contents of {e.Name}:\n\t {filecontents}");
-                    }
-                    else
-                    {
+                    } else {
                         AppUtils.LogToFile($"Contents too large to show ({filecontents.Length} bytes)");
                     }
                 }
-            } catch (IOException err)
-            {
+            } catch (IOException err) {
                 // File locked by other process
                 // Continue
                 AppUtils.LogToFile($"IOException: {err.Message}", "errors.txt");
             }
         }
 
-        private static void OnChanged(object sender, FileSystemEventArgs e)
-        {
-            if (e.ChangeType != WatcherChangeTypes.Changed)
-            {
+        private static void OnChanged(object sender, FileSystemEventArgs e) {
+            if (e.ChangeType != WatcherChangeTypes.Changed) {
                 return;
             }
 
@@ -108,46 +93,35 @@ namespace BoincWatcher
                 || e.Name.StartsWith("stat_icon")
                 || e.Name.StartsWith("platform_nvidia")
                 || e.Name.EndsWith("cert")
-                || e.FullPath.EndsWith(".exe"))
-            {
+                || e.FullPath.EndsWith(".exe")) {
                 return;
             }
 
-            try
-            {
+            try {
                 string filecontents = File.ReadAllText(e.FullPath);
 
-                if (e.Name.StartsWith("genefer"))
-                {
+                if (e.Name.StartsWith("genefer")) {
                     BoincActions.HandleGenefer(sender, e, filecontents);
-                }
-                else
-                {
+                } else {
                     AppUtils.LogToFile($"Changed: {e.FullPath} ({e.GetType()})");
-                    if (filecontents.Length < 500)
-                    {
+                    if (filecontents.Length < 500) {
                         AppUtils.LogToFile($"Contents of {e.Name}:\n\t {filecontents}");
-                    }
-                    else
-                    {
+                    } else {
                         AppUtils.LogToFile($"Contents too large to show ({filecontents.Length} bytes)");
                     }
                 }
-            } catch (IOException err)
-            {
+            } catch (IOException err) {
                 // File locked by other process
                 // Continue
                 AppUtils.LogToFile($"IOException: {err.Message}", "errors.txt");
             }
         }
 
-        private static void OnTasksElapsedTime(object source, ElapsedEventArgs e)
-        {
+        private static void OnTasksElapsedTime(object source, ElapsedEventArgs e) {
             BoincActions.GetTasks();
         }
 
-        private static void OnStateElapsedTime(object source, ElapsedEventArgs e)
-        {
+        private static void OnStateElapsedTime(object source, ElapsedEventArgs e) {
             BoincActions.GetState();
         }
     }

@@ -1,9 +1,6 @@
-﻿namespace BoincWatcher
-{
-    internal class BoincStrings
-    {
-        public static string[] ResultClientState =
-        {
+﻿namespace BoincWatcher {
+    internal class BoincStrings {
+        public static string[] ResultClientState = {
             "new",
             "downloading",
             "downloaded",
@@ -14,15 +11,13 @@
             "upload failed"
         };
 
-        public static string[] ResultSchedulerState = 
-        {
+        public static string[] ResultSchedulerState = {
             "uninitialized",
             "preempted",
             "scheduled"
         };
 
-        public static string[] ResultActiveTaskState =
-        {
+        public static string[] ResultActiveTaskState = {
             "UNINITIALIZED",
             "EXECUTING",
             "SUSPENDED",

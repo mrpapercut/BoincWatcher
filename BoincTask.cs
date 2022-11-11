@@ -1,9 +1,7 @@
 ﻿using System.Text.Json;
 
-namespace BoincWatcher
-{
-    internal class BoincTask
-    {
+namespace BoincWatcher {
+    internal class BoincTask {
         public string? Name { get; set; }
         public string? WUName { get; set; }
         public string? ProjectURL { get; set; }
@@ -31,8 +29,7 @@ namespace BoincWatcher
         public int? ExitStatus { get; set; } = -1;
         public int? Signal { get; set; } = -1;
 
-        public string ToJSON()
-        {
+        public string ToJSON() {
             string jsonStr = JsonSerializer.Serialize(this);
 
             return jsonStr;
