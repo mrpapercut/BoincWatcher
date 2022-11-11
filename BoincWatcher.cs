@@ -1,24 +1,32 @@
-﻿using System.Timers;
+﻿using System.Text.Json;
+using System.Timers;
 
 using Timer = System.Timers.Timer;
 
 namespace BoincWatcher {
+    internal class StateJson {
+        public float gpuUsage { get; set; }
+        public Dictionary<int, float>? cpuUsage { get; set; }
+    }
+
+    internal class TasksJson {
+
+    }
+
     internal class BoincWatcher {
         static Timer taskTimer = new();
         static Timer stateTimer = new();
 
-        static AppConfig AppConfig;
-
-        static BoincActions BoincActions;
+        static AppConfig AppConfig = new();
+        static BoincActions BoincActions = new();
+        static Performance Performance = new();
 
         static List<BoincTask> boincTasks = new();
 
         static void Main(string[] args) {
-            AppConfig = new AppConfig();
             AppConfig.LoadConfig();
-
-            BoincActions = new BoincActions();
             BoincActions.SetConfig(AppConfig);
+            Performance.InitWatchers();
 
             Console.WriteLine($"Watching Primegrid on path {AppConfig.PrimegridProjectFolder}");
 
@@ -39,15 +47,15 @@ namespace BoincWatcher {
             watcher.EnableRaisingEvents = true;
             watcher.IncludeSubdirectories = true;
 
+            /*
             taskTimer.Elapsed += new ElapsedEventHandler(OnTasksElapsedTime);
             taskTimer.Interval = 1000;
             taskTimer.Enabled = true;
+            */
 
-            /*
             stateTimer.Elapsed += new ElapsedEventHandler(OnStateElapsedTime);
             stateTimer.Interval = 10000;
             stateTimer.Enabled = true;
-            */
 
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
@@ -122,7 +130,19 @@ namespace BoincWatcher {
         }
 
         private static void OnStateElapsedTime(object source, ElapsedEventArgs e) {
-            BoincActions.GetState();
+            Dictionary<int, float> cpuUsage = Performance.GetCPUUsage();
+            float gpuUsage = Performance.GetGPUUsage();
+
+            var stateJson = new StateJson {
+                cpuUsage = cpuUsage,
+                gpuUsage = gpuUsage,
+            };
+
+            string stateJsonString = JsonSerializer.Serialize<StateJson>(stateJson);
+
+            Console.WriteLine(stateJsonString);
+
+            // BoincActions.GetState();
         }
     }
 }
