@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>BoincWatcher.BoincWatcher</StartupObject>
+    <StartupObject></StartupObject>
     <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
@@ -29,6 +29,10 @@
 
   <ItemGroup>
     <None Include="C:\workspace\tmp\BoincWatcher\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Agents\" />
   </ItemGroup>
 
 </Project>

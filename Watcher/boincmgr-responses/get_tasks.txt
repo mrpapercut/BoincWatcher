@@ -1,0 +1,107 @@
+﻿
+======== Tasks ========
+1) -----------
+   name: llrCUL_436437244_0
+   WU name: llrCUL_436437244
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 03:50:04 2022
+   report deadline: Sat Nov 19 03:50:04 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 903
+   resources: 8 CPUs
+   estimated CPU time remaining: 2684.485165
+   elapsed task time: 16450.246078
+   slot: 0
+   PID: 12708
+   CPU time at last checkpoint: 6493.984000
+   current CPU time: 6498.125000
+   fraction done: 0.859600
+   swap size: 223 MB
+   working set size: 227 MB
+2) -----------
+   name: llrCUL_436437710_0
+   WU name: llrCUL_436437710
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 06:23:42 2022
+   report deadline: Sat Nov 19 06:23:43 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 903
+   resources: 8 CPUs
+   estimated CPU time remaining: 75845.690110
+   elapsed task time: 0.000000
+3) -----------
+   name: data_collect_v4_1667240702_379816_0
+   WU name: data_collect_v4_1667240702_379816
+   project URL: https://wuprop.boinc-af.org/
+   received: Sat Nov  5 10:14:04 2022
+   report deadline: Sat Nov 12 10:14:06 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 429
+   resources: 1 CPU
+   estimated CPU time remaining: 1004.628940
+   elapsed task time: 2600.216398
+   slot: 1
+   PID: 13268
+   CPU time at last checkpoint: 0.109375
+   current CPU time: 0.109375
+   fraction done: 0.721311
+   swap size: 10 MB
+   working set size: 18 MB
+4) -----------
+   name: genefer15_67141687_1
+   WU name: genefer15_67141687
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:55:50 2022
+   report deadline: Wed Nov  9 10:55:52 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   estimated CPU time remaining: 41.762406
+   elapsed task time: 10.155443
+   slot: 2
+   PID: 21948
+   CPU time at last checkpoint: 0.000000
+   current CPU time: 6.390625
+   fraction done: 0.000000
+   swap size: 94 MB
+   working set size: 40 MB
+5) -----------
+   name: genefer15_67085593_2
+   WU name: genefer15_67085593
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:56:38 2022
+   report deadline: Wed Nov  9 10:56:39 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   estimated CPU time remaining: 46.650303
+   elapsed task time: 0.000000
+6) -----------
+   name: genefer15_67141737_0
+   WU name: genefer15_67141737
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:57:25 2022
+   report deadline: Wed Nov  9 10:57:27 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   estimated CPU time remaining: 46.656070
+   elapsed task time: 0.000000

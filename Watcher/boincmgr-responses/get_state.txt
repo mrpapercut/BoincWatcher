@@ -1,0 +1,687 @@
+﻿======== Projects ========
+1) -----------
+   name: boincserver
+   master URL: http://127.0.0.1/boincserver/
+   user_name: Mischa
+   team_name:
+   resource share: 100.000000
+   user_total_credit: 0.000000
+   user_expavg_credit: 0.000000
+   host_total_credit: 0.000000
+   host_expavg_credit: 0.000000
+   nrpc_failures: 10
+   master_fetch_failures: 2
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: yes
+   don't request more work: no
+   disk usage: 0.00MB
+   last RPC: Sat Oct  8 16:02:43 2022
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: Message boards
+   description: Correspond with other users on the boincserver message boards
+   URL: http://127.0.0.1/boincserver/forum_index.php
+GUI URL:
+   name: Your account
+   description: View your account information
+   URL: http://127.0.0.1/boincserver/home.php
+GUI URL:
+   name: Your tasks
+   description: View the last week or so of computational work
+   URL: http://127.0.0.1/boincserver/results.php?userid=1
+   jobs succeeded: 0
+   jobs failed: 0
+   elapsed time: 0.000000
+   cross-project ID: 6639cb3c93eff6f236963c426e2b2416
+2) -----------
+   name: PrimeGrid
+   master URL: http://www.primegrid.com/
+   user_name: MischaR
+   team_name: Antarctic Crunchers
+   resource share: 100.000000
+   user_total_credit: 83957098.326605
+   user_expavg_credit: 652106.840910
+   host_total_credit: 62570420.087719
+   host_expavg_credit: 482985.900078
+   nrpc_failures: 0
+   master_fetch_failures: 0
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: no
+   don't request more work: no
+   disk usage: 461.15MB
+   last RPC: Sat Nov  5 10:56:49 2022
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: Message boards
+   description: Correspond with other users on the PrimeGrid message boards
+   URL: http://www.primegrid.com/forum_index.php
+GUI URL:
+   name: Your account
+   description: View your account information and credit totals
+   URL: http://www.primegrid.com/show_user.php?userid=1492903
+GUI URL:
+   name: Preferences
+   description: Select subprojects you would like to run and control resource share
+   URL: http://www.primegrid.com/prefs.php?subset=project
+GUI URL:
+   name: Your results
+   description: View your last week (or more) of computational results and work
+   URL: http://www.primegrid.com/results.php?userid=1492903
+GUI URL:
+   name: Your computers
+   description: View a listing of all the computers on which you are running PrimeGrid
+   URL: http://www.primegrid.com/hosts_user.php?userid=1492903
+GUI URL:
+   name: Team
+   description: Info about team stats
+   URL: http://www.primegrid.com/team_display.php?teamid=8398
+GUI URL:
+   name: BOINC Online Help
+   description: Get help from online volunteer
+   URL: http://boinc.berkeley.edu/help.php
+   jobs succeeded: 53082
+   jobs failed: 28
+   elapsed time: 39476612.604650
+   cross-project ID: 6639cb3c93eff6f236963c426e2b2416
+3) -----------
+   name: PRIVATE GFN SERVER
+   master URL: http://boincvm.proxyma.ru:30080/test4vm/
+   user_name: MischaR
+   team_name: Antarctic Crunchers
+   resource share: 100.000000
+   user_total_credit: 467657.807097
+   user_expavg_credit: 32621.512268
+   host_total_credit: 414920.504014
+   host_expavg_credit: 32093.092735
+   nrpc_failures: 0
+   master_fetch_failures: 0
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: no
+   don't request more work: yes
+   disk usage: 1.49MB
+   last RPC: Thu Nov  3 08:30:18 2022
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: Message boards
+   description: Correspond with other users on the PRIVATE GFN SERVER message boards
+   URL: http://boincvm.proxyma.ru:30080/test4vm/forum_index.php
+GUI URL:
+   name: Your account
+   description: View your account information
+   URL: http://boincvm.proxyma.ru:30080/test4vm/home.php
+GUI URL:
+   name: Your tasks
+   description: View the last week or so of computational work
+   URL: http://boincvm.proxyma.ru:30080/test4vm/results.php?userid=393
+GUI URL:
+   name: Your team
+   description: View information about your team: Antarctic Crunchers
+   URL: http://boincvm.proxyma.ru:30080/test4vm/team_display.php?teamid=25
+   jobs succeeded: 224
+   jobs failed: 0
+   elapsed time: 370050.101289
+   cross-project ID: 6639cb3c93eff6f236963c426e2b2416
+4) -----------
+   name: WUProp@Home
+   master URL: https://wuprop.boinc-af.org/
+   user_name: MischaR
+   team_name: Antarctic Crunchers
+   resource share: 100.000000
+   user_total_credit: 22916.000000
+   user_expavg_credit: 121.268758
+   host_total_credit: 5322.000000
+   host_expavg_credit: 43.059625
+   nrpc_failures: 0
+   master_fetch_failures: 0
+   master fetch pending: no
+   scheduler RPC pending: no
+   trickle upload pending: no
+   attached via Account Manager: no
+   ended: no
+   suspended via GUI: no
+   don't request more work: no
+   disk usage: 0.78MB
+   last RPC: Sat Nov  5 10:14:04 2022
+
+   project files downloaded: 0.000000
+GUI URL:
+   name: Your account
+   description: View your account information and credit totals
+   URL: https://wuprop.boinc-af.org/home.php
+GUI URL:
+   name: Team
+   description: Info about Antarctic Crunchers
+   URL: https://wuprop.boinc-af.org/team_display.php?teamid=38984
+GUI URL:
+   name: Forum
+   description: Get help about WUProp@home
+   URL: https://wuprop.boinc-af.org/forum_index.php
+GUI URL:
+   name: Results
+   description: View data collected by the project
+   URL: https://wuprop.boinc-af.org/results.html
+   jobs succeeded: 2663
+   jobs failed: 0
+   elapsed time: 9815872.704314
+   cross-project ID: 6639cb3c93eff6f236963c426e2b2416
+
+======== Applications ========
+1) -----------
+   name: llrMEGA
+   Project: PrimeGrid
+2) -----------
+   name: llrPPS
+   Project: PrimeGrid
+3) -----------
+   name: llrPPSE
+   Project: PrimeGrid
+4) -----------
+   name: llrTPS
+   Project: PrimeGrid
+5) -----------
+   name: ww
+   Project: PrimeGrid
+6) -----------
+   name: genefer17mega
+   Project: PrimeGrid
+7) -----------
+   name: genefer16
+   Project: PrimeGrid
+8) -----------
+   name: genefer15
+   Project: PrimeGrid
+9) -----------
+   name: genefer_extreme
+   Project: PrimeGrid
+10) -----------
+   name: genefer18
+   Project: PrimeGrid
+11) -----------
+   name: llrSR5
+   Project: PrimeGrid
+12) -----------
+   name: genefer19
+   Project: PrimeGrid
+13) -----------
+   name: ap26
+   Project: PrimeGrid
+14) -----------
+   name: genefer20
+   Project: PrimeGrid
+15) -----------
+   name: pps_sr2sieve
+   Project: PrimeGrid
+16) -----------
+   name: genefer_wr
+   Project: PrimeGrid
+17) -----------
+   name: llrWOO
+   Project: PrimeGrid
+18) -----------
+   name: genefer
+   Project: PrimeGrid
+19) -----------
+   name: llrTRP
+   Project: PrimeGrid
+20) -----------
+   name: llrSOB
+   Project: PrimeGrid
+21) -----------
+   name: llrGCW
+   Project: PrimeGrid
+22) -----------
+   name: llrESP
+   Project: PrimeGrid
+23) -----------
+   name: llrPSP
+   Project: PrimeGrid
+24) -----------
+   name: llr321
+   Project: PrimeGrid
+25) -----------
+   name: llrCUL
+   Project: PrimeGrid
+26) -----------
+   name: gfn1x_small
+   Project: PRIVATE GFN SERVER
+27) -----------
+   name: data_collect_v4
+   Project: WUProp@Home
+
+======== Application versions ========
+1) -----------
+   project: PrimeGrid
+   application: llrPPSE
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.01
+   estimated GFLOPS: 6.36
+   filename: srw_win32_201105.exe
+2) -----------
+   project: PrimeGrid
+   application: llrTPS
+   platform: windows_x86_64
+   plan class: mt
+   version: 8.04
+   estimated GFLOPS: 6.36
+   filename: llr_wrapper_8.04_windows_x86_64.exe
+3) -----------
+   project: PrimeGrid
+   application: ww
+   platform: windows_x86_64
+   plan class: opencl_nvidia_WW
+   version: 1.05
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: WWocl-1.04-win64.exe
+4) -----------
+   project: PrimeGrid
+   application: genefer17mega
+   platform: windows_intelx86
+   plan class: OCLcudaGFN17MEGA
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+5) -----------
+   project: PrimeGrid
+   application: genefer16
+   platform: windows_intelx86
+   plan class: OCLcudaGFN16
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+6) -----------
+   project: PrimeGrid
+   application: genefer15
+   platform: windows_intelx86
+   plan class: OCLcudaGFN15
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+7) -----------
+   project: PrimeGrid
+   application: genefer_extreme
+   platform: windows_intelx86
+   plan class: OCLcudaGFNEXTREME
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+8) -----------
+   project: PrimeGrid
+   application: genefer18
+   platform: windows_intelx86
+   plan class: OCLcudaGFN18
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+9) -----------
+   project: PrimeGrid
+   application: llrSR5
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.02
+   avg #CPUS: 2.000
+   estimated GFLOPS: 13.37
+   filename: srw_win32_201105.exe
+10) -----------
+   project: PrimeGrid
+   application: genefer19
+   platform: windows_intelx86
+   plan class: OCLcudaGFN19
+   version: 3.21
+   avg #CPUS: 0.065
+   estimated GFLOPS: 67.31
+   filename: geneferocl_windows_3.3.3-2.exe
+11) -----------
+   project: PrimeGrid
+   application: ap26
+   platform: windows_x86_64
+   plan class: OCL_cuda_AP27
+   version: 2.09
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: ap27_3.01_opencl_windows64.exe
+12) -----------
+   project: PrimeGrid
+   application: genefer20
+   platform: windows_intelx86
+   plan class: OCLcudaGFN20
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+13) -----------
+   project: PrimeGrid
+   application: pps_sr2sieve
+   platform: windows_intelx86
+   plan class: cudaPPSsieve
+   version: 1.42
+   avg #CPUS: 0.067
+   estimated GFLOPS: 64.07
+   filename: tpsieveCUDA_0.2.3b_windows32.exe
+14) -----------
+   project: PrimeGrid
+   application: pps_sr2sieve
+   platform: windows_x86_64
+   plan class: cpuPPSsieve
+   version: 1.42
+   estimated GFLOPS: 6.45
+   filename: tpsieve_0.3.10d_windows64.exe
+15) -----------
+   project: PrimeGrid
+   application: genefer_wr
+   platform: windows_intelx86
+   plan class: OCLcudaGFNWR
+   version: 3.21
+   avg #CPUS: 0.067
+   estimated GFLOPS: 67.32
+   filename: geneferocl_windows_3.3.3-2.exe
+16) -----------
+   project: PrimeGrid
+   application: genefer
+   platform: windows_intelx86
+   plan class: OCLcudaGFN
+   version: 3.21
+   avg #CPUS: 0.066
+   estimated GFLOPS: 64.97
+   filename: geneferocl_windows_3.3.3-2.exe
+17) -----------
+   project: PrimeGrid
+   application: llrSOB
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.01
+   avg #CPUS: 10.000
+   estimated GFLOPS: 66.87
+   filename: srw_win32_201105.exe
+18) -----------
+   project: PrimeGrid
+   application: llrGCW
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   avg #CPUS: 10.000
+   estimated GFLOPS: 64.54
+   filename: srw_win32_201105.exe
+19) -----------
+   project: PrimeGrid
+   application: llrESP
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.01
+   avg #CPUS: 10.000
+   estimated GFLOPS: 64.54
+   filename: srw_win32_201105.exe
+20) -----------
+   project: PrimeGrid
+   application: llrPSP
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.01
+   avg #CPUS: 10.000
+   estimated GFLOPS: 64.54
+   filename: srw_win32_201105.exe
+21) -----------
+   project: PrimeGrid
+   application: llr321
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.01
+   avg #CPUS: 10.000
+   estimated GFLOPS: 64.54
+   filename: srw_win32_201105.exe
+22) -----------
+   project: PrimeGrid
+   application: llrTRP
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   avg #CPUS: 8.000
+   estimated GFLOPS: 51.63
+   filename: srw_win32_201105.exe
+23) -----------
+   project: PrimeGrid
+   application: llrMEGA
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   avg #CPUS: 8.000
+   estimated GFLOPS: 51.63
+   filename: srw_win32_201105.exe
+24) -----------
+   project: PrimeGrid
+   application: genefer17mega
+   platform: windows_x86_64
+   plan class: cpuGFN17MEGA_mt
+   version: 3.25
+   estimated GFLOPS: 6.45
+   filename: genefer_windows64_3.4.0-3.exe
+25) -----------
+   project: PrimeGrid
+   application: llrPPS
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   estimated GFLOPS: 6.45
+   filename: srw_win32_201105.exe
+26) -----------
+   project: PrimeGrid
+   application: llrCUL
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   avg #CPUS: 8.000
+   estimated GFLOPS: 51.63
+   filename: srw_win32_201105.exe
+27) -----------
+   project: PrimeGrid
+   application: llrWOO
+   platform: windows_x86_64
+   plan class: mt
+   version: 9.03
+   avg #CPUS: 8.000
+   estimated GFLOPS: 51.63
+   filename: srw_win32_201105.exe
+28) -----------
+   project: PRIVATE GFN SERVER
+   application: gfn1x_small
+   platform: windows_intelx86
+   plan class: opencl_nvidia_gfn_101
+   version: 1.03
+   avg #CPUS: 0.987
+   estimated GFLOPS: 5672.00
+   filename: genefer20_1.14.0_win32.exe
+29) -----------
+   project: WUProp@Home
+   application: data_collect_v4
+   platform: windows_x86_64
+   plan class: nci
+   version: 4.29
+   avg #CPUS: 0.010
+   estimated GFLOPS: 0.28
+   filename: data_collect_v4_429_windows_x86_64__nci.exe
+
+======== Workunits ========
+1) -----------
+   name: llrCUL_436437244
+   FP estimate: 2.081991e+15
+   FP bound: 2.081991e+18
+   memory bound: 256.00 MB
+   disk bound: 406.56 MB
+2) -----------
+   name: llrCUL_436437710
+   FP estimate: 2.086123e+15
+   FP bound: 2.086123e+18
+   memory bound: 256.00 MB
+   disk bound: 415.38 MB
+3) -----------
+   name: genefer15_67141695
+   FP estimate: 1.614631e+12
+   FP bound: 4.843892e+14
+   memory bound: 95.37 MB
+   disk bound: 247.96 MB
+4) -----------
+   name: genefer15_67141687
+   FP estimate: 1.614631e+12
+   FP bound: 4.843892e+14
+   memory bound: 95.37 MB
+   disk bound: 247.96 MB
+5) -----------
+   name: genefer15_67085593
+   FP estimate: 1.614431e+12
+   FP bound: 4.843294e+14
+   memory bound: 95.37 MB
+   disk bound: 247.96 MB
+6) -----------
+   name: data_collect_v4_1667240702_379816
+   FP estimate: 1.000000e+12
+   FP bound: 1.000000e+14
+   memory bound: 95.37 MB
+   disk bound: 95.37 MB
+
+======== Tasks ========
+1) -----------
+   name: llrCUL_436437244_0
+   WU name: llrCUL_436437244
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 03:50:04 2022
+   report deadline: Sat Nov 19 03:50:04 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 903
+   resources: 8 CPUs
+   estimated CPU time remaining: 2688.228512
+   elapsed task time: 16440.090635
+   slot: 0
+   PID: 12708
+   CPU time at last checkpoint: 6482.781000
+   current CPU time: 6490.219000
+   fraction done: 0.859200
+   swap size: 223 MB
+   working set size: 227 MB
+2) -----------
+   name: llrCUL_436437710_0
+   WU name: llrCUL_436437710
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 06:23:42 2022
+   report deadline: Sat Nov 19 06:23:43 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 903
+   resources: 8 CPUs
+   estimated CPU time remaining: 75845.690110
+   elapsed task time: 0.000000
+3) -----------
+   name: genefer15_67141695_1
+   WU name: genefer15_67141695
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:55:03 2022
+   report deadline: Wed Nov  9 10:55:04 2022
+   ready to report: no
+   state: uploading
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   final CPU time: 31.437500
+   final elapsed time: 46.431856
+   exit_status: 0
+   signal: 0
+4) -----------
+   name: genefer15_67141687_1
+   WU name: genefer15_67141687
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:55:50 2022
+   report deadline: Wed Nov  9 10:55:52 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   estimated CPU time remaining: 46.656065
+   elapsed task time: 0.000000
+   slot: 2
+   PID: 21948
+   CPU time at last checkpoint: 0.000000
+   current CPU time: 0.000000
+   fraction done: 0.000000
+   swap size: 0 MB
+   working set size: 0 MB
+5) -----------
+   name: genefer15_67085593_2
+   WU name: genefer15_67085593
+   project URL: http://www.primegrid.com/
+   received: Sat Nov  5 10:56:38 2022
+   report deadline: Wed Nov  9 10:56:39 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: uninitialized
+   active_task_state: UNINITIALIZED
+   app version num: 321
+   resources: 0.0657 CPUs + 1 NVIDIA GPU
+   estimated CPU time remaining: 46.650303
+   elapsed task time: 0.000000
+6) -----------
+   name: data_collect_v4_1667240702_379816_0
+   WU name: data_collect_v4_1667240702_379816
+   project URL: https://wuprop.boinc-af.org/
+   received: Sat Nov  5 10:14:04 2022
+   report deadline: Sat Nov 12 10:14:06 2022
+   ready to report: no
+   state: downloaded
+   scheduler state: scheduled
+   active_task_state: EXECUTING
+   app version num: 429
+   resources: 1 CPU
+   estimated CPU time remaining: 1000.705247
+   elapsed task time: 2590.060955
+   slot: 1
+   PID: 13268
+   CPU time at last checkpoint: 0.109375
+   current CPU time: 0.109375
+   fraction done: 0.721311
+   swap size: 10 MB
+   working set size: 18 MB
+
+======== Time stats ========
+  now: 1667642237.955606
+  on_frac: 0.998156
+  connected_frac: 0.999999
+  cpu_and_network_available_frac: 0.999894
+  active_frac: 0.999895
+  gpu_active_frac: 0.999895
+  client_start_time: Thu Nov  3 12:12:24 2022
+
+  previous_uptime: 327395.573368
+  session_active_duration: 168285.891254
+  session_gpu_active_duration: 168285.891254
+  total_start_time: Wed Jun  1 20:22:55 2022
+
+  total_duration: 12791220.310620
+  total_active_duration: 12699614.186321
+  total_gpu_active_duration: 12664305.620358
