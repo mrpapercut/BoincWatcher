@@ -10,29 +10,35 @@ namespace BoincManager.Server;
 public class HttpServer {
     public int Port = 8000;
 
+    private DBConnection dbConn;
+
     private HttpListener _listener;
 
-    public void Start() {
-        _listener = new HttpListener();
-        _listener.Prefixes.Add($"http://localhost:{Port}/");
-        _listener.Start();
+    public HttpServer(DBConnection dbConn) {
+        this.dbConn = dbConn;
+    }
 
-        Console.WriteLine($"Is listening? {_listener.IsListening}");
+    public void Start() {
+        this._listener = new HttpListener();
+        this._listener.Prefixes.Add($"http://localhost:{Port}/");
+        this._listener.Start();
+
+        Console.WriteLine($"Is listening? {this._listener.IsListening}");
 
         Receive();
     }
 
     public void Stop() {
-        _listener.Stop();
+        this._listener.Stop();
     }
 
     private void Receive() {
-        _listener.BeginGetContext(new AsyncCallback(ListenerCallback), _listener);
+        this._listener.BeginGetContext(new AsyncCallback(ListenerCallback), this._listener);
     }
 
     private void ListenerCallback(IAsyncResult result) {
-        if (_listener.IsListening) {
-            var context = _listener.EndGetContext(result);
+        if (this._listener.IsListening) {
+            var context = this._listener.EndGetContext(result);
             var request = context.Request;
 
             Receive();
@@ -84,6 +90,10 @@ public class HttpServer {
         // Console.WriteLine(requestData.GetType());
         // MySQLObjects.Task task = JsonSerializer.Deserialize<MySQLObjects.Task>(requestData, new JsonSerializerOptions(JsonSerializerDefaults.Web));
 
-        Console.WriteLine(task.ToJSON());
+        // Console.WriteLine(task.ToJSON());
+
+        int affectedRows = this.dbConn.UpsertTask(task);
+
+        Console.WriteLine($"Affected rows: {affectedRows}");
     }
 }

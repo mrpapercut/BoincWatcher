@@ -19,6 +19,9 @@ public class BoincTask {
         
     [DataMember]
     public int ProjectId { get; set; }
+
+    [DataMember]
+    public string ProjectURL { get; set; }
         
     [DataMember]
     public int State { get; set; }

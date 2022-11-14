@@ -6,11 +6,10 @@ namespace BoincManager.Server;
 public class Program {
     static DBConnection dbConn = new();
     static void Main(string[] args) {
-        HttpServer server = new HttpServer();
+        HttpServer server = new HttpServer(dbConn);
         server.Start();
 
-        dbConn.OpenConnection();
-
+        /*
         List<BoincTask> tasks = dbConn.GetTasks();
 
         tasks.ForEach(t => {
@@ -18,6 +17,7 @@ public class Program {
 
             Console.WriteLine(taskJsonStr);
         });
+        */
 
         Console.WriteLine("Press enter to exit");
         Console.ReadLine();
