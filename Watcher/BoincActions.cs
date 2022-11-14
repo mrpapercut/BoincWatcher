@@ -200,7 +200,7 @@ public class BoincActions {
         // Find corresponding BoincTask
         // Submit updated task to central server
         // Remove from list
-    }
+    }  
 
     public void PostToServer(string endpoint, string message) {
         string url = $"http://localhost:8000{endpoint}";

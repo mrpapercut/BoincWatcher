@@ -39,7 +39,6 @@ public class FolderWatcher {
     }
 
     private void OnCreated(object sender, FileSystemEventArgs e) {
-        Console.WriteLine($"OnCreated {e.Name}");
         if (e.Name == null
             || e.Name.StartsWith("slideshow")
             || e.Name.StartsWith("stat_icon")
@@ -48,6 +47,8 @@ public class FolderWatcher {
             || e.FullPath.EndsWith(".exe")) {
             return;
         }
+
+        Console.WriteLine($"OnCreated {e.Name}");
 
         try {
             string filecontents = File.ReadAllText(e.FullPath);
@@ -74,7 +75,6 @@ public class FolderWatcher {
             return;
         }
 
-        Console.WriteLine($"OnChanged {e.Name}");
         if (e.Name == null
             || e.Name.StartsWith("slideshow")
             || e.Name.StartsWith("stat_icon")
@@ -83,6 +83,8 @@ public class FolderWatcher {
             || e.FullPath.EndsWith(".exe")) {
             return;
         }
+
+        Console.WriteLine($"OnChanged {e.Name}");
 
         try {
             string filecontents = File.ReadAllText(e.FullPath);
