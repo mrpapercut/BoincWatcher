@@ -226,7 +226,7 @@ AppPackages/
 #####
 
 # DB data
-./database/data/
+database/data/
 
 # .gitkeep
 !.gitkeep
