@@ -5,7 +5,7 @@ using BoincManager.Server.Objects;
 namespace BoincManager.Server;
 public class DBConnection {
     public MySqlConnection GetConnection() {
-        string cs = @"server=localhost;userid=dcadmin;password=1h1_uqx8DJGP709x;database=dcmanager";
+        string cs = @"server=localhost;port=3307;userid=dcadmin;password=1h1_uqx8DJGP709x;database=dcmanager";
 
         MySqlConnection conn = new MySqlConnection(cs);
 
