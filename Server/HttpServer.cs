@@ -8,7 +8,7 @@ using BoincManager.Server.Objects;
 namespace BoincManager.Server;
 
 public class HttpServer {
-    public int Port = 8000;
+    public int Port = 8080;
 
     private DBConnection dbConn;
 

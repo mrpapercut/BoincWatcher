@@ -203,7 +203,7 @@ public class BoincActions {
     }  
 
     public void PostToServer(string endpoint, string message) {
-        string url = $"http://localhost:8000{endpoint}";
+        string url = $"http://localhost:8080{endpoint}";
 
         using var client = new HttpClient();
         var result = client.PostAsync(url, new StringContent(message, Encoding.UTF8, "application/json")).Result;

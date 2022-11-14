@@ -70,7 +70,7 @@ public class Startup {
 
     private void StartTimers() {
         this.taskTimer.Elapsed += new ElapsedEventHandler(this.OnTasksElapsedTime);
-        this.taskTimer.Interval = 500;
+        this.taskTimer.Interval = 1000;
         this.taskTimer.Enabled = true;
 
         this.stateTimer.Elapsed += new ElapsedEventHandler(this.OnStateElapsedTime);
