@@ -3,8 +3,8 @@ version: '3.9'
 services:
   mysql:
     build:
-      context: ./
-    container_name: mysql
+      context: ./database
+    container_name: ${COMPOSE_PROJECT_NAME}_mysql
     restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
@@ -12,7 +12,7 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - "./migrations:/docker-entrypoint-initdb.d"
-      - "./data:/var/lib/mysql"
+      - "./database/migrations:/docker-entrypoint-initdb.d"
+      - "./database/data:/var/lib/mysql"
     ports:
       - "3306:3306"
