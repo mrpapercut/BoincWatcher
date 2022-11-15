@@ -1,0 +1,12 @@
+# TODO
+
+## DB
+Entity Framework: https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/workflows/new-database
+EF6 MySQL connector: https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework60.html
+
+## TODO
+- Keep active tasks in memory, write to db only when state(s) change
+- Send out task results from FolderWatcher
+- Store client_state
+- Use dockerized MySQL DB
+- Dockerize Manager
