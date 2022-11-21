@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Timers;
-
+using System.Xml.Linq;
 using BoincManager.Watcher.Logger;
 
 using Timer = System.Timers.Timer;
@@ -33,8 +33,6 @@ public class Startup {
     private Timer stateTimer = new();
 
     /*
-    static BoincActions BoincActions = new();
-
     static List<BoincTask> boincTasks = new();
     */
 
@@ -70,7 +68,7 @@ public class Startup {
 
     private void StartTimers() {
         this.taskTimer.Elapsed += new ElapsedEventHandler(this.OnTasksElapsedTime);
-        this.taskTimer.Interval = 1000;
+        this.taskTimer.Interval = 3000;
         this.taskTimer.Enabled = true;
 
         this.stateTimer.Elapsed += new ElapsedEventHandler(this.OnStateElapsedTime);
@@ -79,7 +77,11 @@ public class Startup {
     }
 
     private void OnTasksElapsedTime(object source, ElapsedEventArgs e) {
-        this.BoincActions.GetTasks();
+        // XElement boincState = this.BoincActions.GetRPCState();
+
+        // Console.WriteLine(boincState.ToString());
+
+        this.BoincActions.CallSocket();
     }
 
     private void OnStateElapsedTime(object source, ElapsedEventArgs e) {
