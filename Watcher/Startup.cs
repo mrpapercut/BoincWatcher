@@ -6,6 +6,7 @@ using System.Text.Json;
 using System.Timers;
 using System.Xml.Linq;
 using BoincManager.Watcher.Logger;
+using BoincManager.BoincStateModels;
 
 using Timer = System.Timers.Timer;
 
@@ -76,12 +77,25 @@ public class Startup {
         this.stateTimer.Enabled = true;
     }
 
-    private void OnTasksElapsedTime(object source, ElapsedEventArgs e) {
+    private async void OnTasksElapsedTime(object source, ElapsedEventArgs e) {
         // XElement boincState = this.BoincActions.GetRPCState();
 
         // Console.WriteLine(boincState.ToString());
 
-        this.BoincActions.CallSocket();
+        try {
+            ClientState clientState = await this.BoincActions.GetState();
+
+            Console.WriteLine(clientState.hostInfo.ToJSON());
+            foreach (Project p in clientState.projects) {
+                Console.WriteLine(p.ToJSON());
+            }
+            foreach (App a in clientState.apps) {
+                Console.WriteLine(a.ToJSON());
+            }
+
+        } catch (Exception ex) {
+            Console.WriteLine($"Error: {ex}");
+        }
     }
 
     private void OnStateElapsedTime(object source, ElapsedEventArgs e) {
