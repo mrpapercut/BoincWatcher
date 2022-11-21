@@ -76,6 +76,10 @@ public class DBConnection {
                 projectId = 2;
                 break;
 
+            case "http://srbase.my-firewall.org/sr5/":
+                projectId = 3;
+                break;
+
             case "http://www.primegrid.com/":
             case "https://www.primegrid.com/":
             default:

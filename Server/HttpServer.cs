@@ -94,6 +94,6 @@ public class HttpServer {
 
         int affectedRows = this.dbConn.UpsertTask(task);
 
-        Console.WriteLine($"Affected rows: {affectedRows}");
+        // Console.WriteLine($"Affected rows: {affectedRows}");
     }
 }
