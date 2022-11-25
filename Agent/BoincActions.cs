@@ -16,9 +16,10 @@ public class BoincActions {
     public BoincActions(AppConfig appConfig) {
         this.AppConfig = appConfig;
 
-        this.GetAuthorization();
+        // this.GetAuthorization();
     }
 
+    /*
     private void GetAuthorization() {
         string rpcPassword = this.GetRPCPassword();
 
@@ -57,12 +58,14 @@ public class BoincActions {
 
         return stateResponse;
     }
+    */
 
-    public async void CallSocket() {
+    public async Task<XElement?> CallSocket() {
         string command = @"<get_state/>";
         string cleanResponse = "";
 
         IPEndPoint ipEndPoint = new(IPAddress.Parse("127.0.0.1"), 31416);
+
         using (Socket client = new(ipEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp)) {
             await client.ConnectAsync(ipEndPoint);
 
@@ -72,30 +75,38 @@ public class BoincActions {
             _ = await client.SendAsync(cmdBytes, SocketFlags.None);
 
             byte[] buff = new byte[client.ReceiveBufferSize * 2];
-            Console.WriteLine($"ReceiveBufferSize: {client.ReceiveBufferSize}");
-            Console.WriteLine($"Bytes available before read: {client.Available}");
+            // Console.WriteLine($"ReceiveBufferSize: {client.ReceiveBufferSize}");
+            // Console.WriteLine($"Bytes available before read: {client.Available}");
 
             string response = "";
             int received = await client.ReceiveAsync(buff, SocketFlags.None);
             response += Encoding.UTF8.GetString(buff, 0, received);
+
             while (client.Available > 0) {
-                Console.WriteLine("Reading more");
+                // Console.WriteLine("Reading more");
                 buff = new byte[client.ReceiveBufferSize * 2];
                 received = await client.ReceiveAsync(buff, SocketFlags.None);
                 response += Encoding.UTF8.GetString(buff, 0, received);
             }
-            Console.WriteLine($"Bytes available after read: {client.Available}");
+            // Console.WriteLine($"Bytes available after read: {client.Available}");
 
             // Clean response
             Regex re = new Regex(@"/boinc_gui_rpc_reply>\n.*$", RegexOptions.Multiline);
             cleanResponse = re.Replace(response, "/boinc_gui_rpc_reply>");
         }
 
-        XElement resXml = XElement.Parse(cleanResponse);
+        try {
+            XElement resXml = XElement.Parse(cleanResponse);
 
-        Console.WriteLine(resXml.Element("client_state").Element("host_info").Element("domain_name").Value);
+            Console.WriteLine(resXml?.Element("client_state")?.Element("host_info")?.Element("domain_name")?.Value);
+
+            return resXml?.Element("client_state");
+        } catch {
+            throw new Exception("Failed to parse BOINC RPC data");
+        }
     }
 
+    /*
     public XElement ExecRPCCommand(string command) {
         string cleanResponse = "";
 
@@ -318,6 +329,7 @@ public class BoincActions {
 
         // If a task fails to parse, log it to a file per workunit
     }
+    */
 
     public void HandleGenefer(object sender, FileSystemEventArgs e, string filecontents) {
         string createdOrChanged = (e.ChangeType == WatcherChangeTypes.Created) ? "created" : "changed";

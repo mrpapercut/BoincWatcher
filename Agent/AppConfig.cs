@@ -39,6 +39,7 @@ public class AppConfig {
             }
         }
 
+        // TODO: Read all project folders
         PrimegridProjectFolder = BoincDataFolder + @"\Projects\www.primegrid.com";
         if (!Directory.Exists(PrimegridProjectFolder)) {
             throw new Exception($"Could not find {PrimegridProjectFolder}");
@@ -50,7 +51,7 @@ public class AppConfig {
         }
     }
 
-    private string ReadBoincValueFromRegistry(string key) {
+    private string? ReadBoincValueFromRegistry(string key) {
         string regVal = (string)Registry.GetValue("HKEY_LOCAL_MACHINE\\SOFTWARE\\Space Sciences Laboratory, U.C. Berkeley\\BOINC Setup", key, string.Empty);
 
         return regVal;

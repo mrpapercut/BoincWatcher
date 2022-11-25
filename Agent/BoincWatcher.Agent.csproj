@@ -31,8 +31,6 @@
     <None Include="C:\workspace\tmp\BoincWatcher\.editorconfig" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Agents\" />
-  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>

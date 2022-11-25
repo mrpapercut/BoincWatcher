@@ -76,15 +76,19 @@ public class Startup {
         this.stateTimer.Enabled = true;
     }
 
-    private void OnTasksElapsedTime(object source, ElapsedEventArgs e) {
-        // XElement boincState = this.BoincActions.GetRPCState();
+    private async void OnTasksElapsedTime(object? source, ElapsedEventArgs e) {
+        try {
+            XElement? clientState = await BoincActions.CallSocket();
 
-        // Console.WriteLine(boincState.ToString());
+            if (clientState != null) {
 
-        this.BoincActions.CallSocket();
+            }
+        } catch (Exception ex) {
+            Console.WriteLine(ex);
+        }
     }
 
-    private void OnStateElapsedTime(object source, ElapsedEventArgs e) {
+    private void OnStateElapsedTime(object? source, ElapsedEventArgs e) {
         Console.WriteLine("OnStateElapsedTime");
         Dictionary<int, float> cpuUsage = this.Performance.GetCPUUsage();
         // float gpuUsage = Performance.GetGPUUsage();
