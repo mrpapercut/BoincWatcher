@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace BoincWatcher.Agent.Models;
+namespace BoincWatcher.Domain.Models;
 public class App {
     public string? Name { get; set; } = string.Empty;
     public string? UserFriendlyName { get; set; } = string.Empty;

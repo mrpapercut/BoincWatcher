@@ -1,6 +1,7 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 
-namespace BoincWatcher.Agent.Models;
+namespace BoincWatcher.Domain.Models;
 public class Project {
     public string? MasterUrl { get; set; } = string.Empty;
     public string? ProjectName { get; set; } = string.Empty;

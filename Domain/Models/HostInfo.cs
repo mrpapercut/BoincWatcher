@@ -1,6 +1,7 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 
-namespace BoincWatcher.Agent.Models;
+namespace BoincWatcher.Domain.Models;
 public class HostInfo {
     public int Timezone { get; set; }
     public string? DomainName { get; set; } = string.Empty;
