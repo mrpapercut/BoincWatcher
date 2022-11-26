@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<boinc_gui_rpc_reply>
+    <projects>
+        <project>
+            <master_url>http://127.0.0.1/boincserver/</master_url>
+            <project_name>boincserver</project_name>
+            <symstore></symstore>
+            <user_name>Mischa</user_name>
+            <team_name></team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1665237247.000000</cpid_time>
+            <user_total_credit>0.000000</user_total_credit>
+            <user_expavg_credit>0.000000</user_expavg_credit>
+            <user_create_time>1665237247.000000</user_create_time>
+            <rpc_seqno>23</rpc_seqno>
+            <userid>1</userid>
+            <teamid>0</teamid>
+            <hostid>1</hostid>
+            <host_total_credit>0.000000</host_total_credit>
+            <host_expavg_credit>0.000000</host_expavg_credit>
+            <host_create_time>1665237257.000000</host_create_time>
+            <nrpc_failures>1</nrpc_failures>
+            <master_fetch_failures>3</master_fetch_failures>
+            <min_rpc_time>0.000000</min_rpc_time>
+            <next_rpc_time>0.000000</next_rpc_time>
+            <rec>0.000000</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>0.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>1.000000</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>0</njobs_success>
+            <njobs_error>0</njobs_error>
+            <elapsed_time>0.000000</elapsed_time>
+            <last_rpc_time>1665237763.949554</last_rpc_time>
+            <master_url_fetch_pending/>
+            <dont_use_dcf/>
+            <suspended_via_gui/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_apps>NVIDIA</no_rsc_apps>
+            <gui_urls>
+
+
+                <gui_url>
+                    <name>Message boards</name>
+                    <description>Correspond with other users on the boincserver message boards</description>
+                    <url>http://127.0.0.1/boincserver/forum_index.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information</description>
+                    <url>http://127.0.0.1/boincserver/home.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your tasks</name>
+                    <description>View the last week or so of computational work</description>
+                    <url>http://127.0.0.1/boincserver/results.php?userid=1</url>
+                </gui_url>
+
+            </gui_urls>
+            <sched_priority>0.000000</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/127.0.0.1_boincserver</project_dir>
+        </project>
+        <project>
+            <master_url>https://dev.primegrid.com/</master_url>
+            <project_name>CompositeGrid</project_name>
+            <symstore></symstore>
+            <user_name>Mischa</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1668415952.000000</cpid_time>
+            <user_total_credit>21474.975464</user_total_credit>
+            <user_expavg_credit>845.869686</user_expavg_credit>
+            <user_create_time>1668415952.000000</user_create_time>
+            <rpc_seqno>96</rpc_seqno>
+            <userid>1377403</userid>
+            <teamid>8398</teamid>
+            <hostid>1045377</hostid>
+            <host_total_credit>20007.425560</host_total_credit>
+            <host_expavg_credit>792.895353</host_expavg_credit>
+            <host_create_time>1668415962.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669381969.055477</min_rpc_time>
+            <next_rpc_time>1669554762.055477</next_rpc_time>
+            <rec>101.773840</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>9517903.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>2.707117</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>16</njobs_success>
+            <njobs_error>0</njobs_error>
+            <elapsed_time>37389.493530</elapsed_time>
+            <last_rpc_time>1669381962.055477</last_rpc_time>
+            <verify_files_on_app_start/>
+            <dont_request_more_work/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>1669382267.860098</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>600.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_pref>NVIDIA</no_rsc_pref>
+            <gui_urls>
+
+                <gui_url>
+                    <name>Message boards</name>
+                    <description>Correspond with other users on the PrimeGrid message boards</description>
+                    <url>http://dev.primegrid.com/forum_index.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information and credit totals</description>
+                    <url>http://dev.primegrid.com/show_user.php?userid=1377403</url>
+                </gui_url>
+                <gui_url>
+                    <name>Preferences</name>
+                    <description>Select subprojects you would like to run and control resource share</description>
+                    <url>http://dev.primegrid.com/prefs.php?subset=project</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your results</name>
+                    <description>View your last week (or more) of computational results and work</description>
+                    <url>http://dev.primegrid.com/results.php?userid=1377403</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your computers</name>
+                    <description>View a listing of all the computers on which you are running PrimeGrid</description>
+                    <url>http://dev.primegrid.com/hosts_user.php?userid=1377403</url>
+                </gui_url>
+                <ifteam>
+                    <gui_url>
+                        <name>Team</name>
+                        <description>Info about team stats</description>
+                        <url>http://dev.primegrid.com/team_display.php?teamid=8398</url>
+                    </gui_url>
+                </ifteam>
+                <gui_url>
+                    <name>BOINC Online Help</name>
+                    <description>Get help from online volunteer</description>
+                    <url>http://boinc.berkeley.edu/help.php</url>
+                </gui_url>
+            </gui_urls>
+            <sched_priority>-0.000000</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/dev.primegrid.com</project_dir>
+        </project>
+        <project>
+            <master_url>http://www.primegrid.com/</master_url>
+            <project_name>PrimeGrid</project_name>
+            <symstore></symstore>
+            <user_name>MischaR</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue>work</host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1651411110.000000</cpid_time>
+            <user_total_credit>88562266.978946</user_total_credit>
+            <user_expavg_credit>299742.685135</user_expavg_credit>
+            <user_create_time>1651411110.000000</user_create_time>
+            <rpc_seqno>111897</rpc_seqno>
+            <userid>1492903</userid>
+            <teamid>8398</teamid>
+            <hostid>1142816</hostid>
+            <host_total_credit>66125688.783827</host_total_credit>
+            <host_expavg_credit>231007.344216</host_expavg_credit>
+            <host_create_time>1654107819.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669444471.890270</min_rpc_time>
+            <next_rpc_time>1669617264.890270</next_rpc_time>
+            <rec>229854.726892</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>328352263.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>0.647574</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>63614</njobs_success>
+            <njobs_error>28</njobs_error>
+            <elapsed_time>41203762.193300</elapsed_time>
+            <last_rpc_time>1669444464.890270</last_rpc_time>
+            <verify_files_on_app_start/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_pref>NVIDIA</no_rsc_pref>
+            <gui_urls>
+
+                <gui_url>
+                    <name>Message boards</name>
+                    <description>Correspond with other users on the PrimeGrid message boards</description>
+                    <url>http://www.primegrid.com/forum_index.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information and credit totals</description>
+                    <url>http://www.primegrid.com/show_user.php?userid=1492903</url>
+                </gui_url>
+                <gui_url>
+                    <name>Preferences</name>
+                    <description>Select subprojects you would like to run and control resource share</description>
+                    <url>http://www.primegrid.com/prefs.php?subset=project</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your results</name>
+                    <description>View your last week (or more) of computational results and work</description>
+                    <url>http://www.primegrid.com/results.php?userid=1492903</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your computers</name>
+                    <description>View a listing of all the computers on which you are running PrimeGrid</description>
+                    <url>http://www.primegrid.com/hosts_user.php?userid=1492903</url>
+                </gui_url>
+                <ifteam>
+                    <gui_url>
+                        <name>Team</name>
+                        <description>Info about team stats</description>
+                        <url>http://www.primegrid.com/team_display.php?teamid=8398</url>
+                    </gui_url>
+                </ifteam>
+                <gui_url>
+                    <name>BOINC Online Help</name>
+                    <description>Get help from online volunteer</description>
+                    <url>http://boinc.berkeley.edu/help.php</url>
+                </gui_url>
+            </gui_urls>
+            <sched_priority>-1.019192</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <venue>work</venue>
+            <project_dir>C:\ProgramData\BOINC/projects/www.primegrid.com</project_dir>
+        </project>
+        <project>
+            <master_url>http://boincvm.proxyma.ru:30080/test4vm/</master_url>
+            <project_name>PRIVATE GFN SERVER</project_name>
+            <symstore></symstore>
+            <user_name>MischaR</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1664524220.000000</cpid_time>
+            <user_total_credit>495975.388609</user_total_credit>
+            <user_expavg_credit>4883.594650</user_expavg_credit>
+            <user_create_time>1664524220.000000</user_create_time>
+            <rpc_seqno>229</rpc_seqno>
+            <userid>393</userid>
+            <teamid>25</teamid>
+            <hostid>10344</hostid>
+            <host_total_credit>422465.167312</host_total_credit>
+            <host_expavg_credit>3555.555678</host_expavg_credit>
+            <host_create_time>1666944964.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669404276.671381</min_rpc_time>
+            <next_rpc_time>0.000000</next_rpc_time>
+            <rec>18598.522972</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>1560590.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>1.000000</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>224</njobs_success>
+            <njobs_error>0</njobs_error>
+            <elapsed_time>370050.101289</elapsed_time>
+            <last_rpc_time>1669404265.671381</last_rpc_time>
+            <dont_use_dcf/>
+            <dont_request_more_work/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_pref>CPU</no_rsc_pref>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <gui_urls>
+
+
+                <gui_url>
+                    <name>Message boards</name>
+                    <description>Correspond with other users on the PRIVATE GFN SERVER message boards</description>
+                    <url>http://boincvm.proxyma.ru:30080/test4vm/forum_index.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information</description>
+                    <url>http://boincvm.proxyma.ru:30080/test4vm/home.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your tasks</name>
+                    <description>View the last week or so of computational work</description>
+                    <url>http://boincvm.proxyma.ru:30080/test4vm/results.php?userid=393</url>
+                </gui_url>
+                <ifteam>
+                    <gui_url>
+                        <name>Your team</name>
+                        <description>View information about your team: Antarctic Crunchers</description>
+                        <url>http://boincvm.proxyma.ru:30080/test4vm/team_display.php?teamid=25</url>
+                    </gui_url>
+                </ifteam>
+            </gui_urls>
+            <sched_priority>-0.000000</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/boincvm.proxyma.ru_30080_test4vm</project_dir>
+        </project>
+        <project>
+            <master_url>https://rnma.xyz/boinc/</master_url>
+            <project_name>RamanujanMachine</project_name>
+            <symstore></symstore>
+            <user_name>MischaR</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1662711116.000000</cpid_time>
+            <user_total_credit>9123.241797</user_total_credit>
+            <user_expavg_credit>832.661106</user_expavg_credit>
+            <user_create_time>1662711116.000000</user_create_time>
+            <rpc_seqno>410</rpc_seqno>
+            <userid>8121</userid>
+            <teamid>2059</teamid>
+            <hostid>5259</hostid>
+            <host_total_credit>9106.163689</host_total_credit>
+            <host_expavg_credit>833.352948</host_expavg_credit>
+            <host_create_time>1668768334.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669397575.282241</min_rpc_time>
+            <next_rpc_time>0.000000</next_rpc_time>
+            <rec>541.857275</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>41098079.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>1.000000</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>656</njobs_success>
+            <njobs_error>0</njobs_error>
+            <elapsed_time>602455.535465</elapsed_time>
+            <last_rpc_time>1669397452.062241</last_rpc_time>
+            <dont_use_dcf/>
+            <dont_request_more_work/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_apps>NVIDIA</no_rsc_apps>
+            <gui_urls>
+
+                <gui_url>
+                    <name>discord</name>
+                    <description>Correspond with other users on the RamanujanMachine discord</description>
+                    <url>https://discord.gg/VK8kBFdXvu</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information</description>
+                    <url>https://rnma.xyz/boinc/home.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Your tasks</name>
+                    <description>View the last week or so of computational work</description>
+                    <url>https://rnma.xyz/boinc/results.php?userid=8121</url>
+                </gui_url>
+                <ifteam>
+                    <gui_url>
+                        <name>Your team</name>
+                        <description>View information about your team: Antarctic Crunchers</description>
+                        <url>https://rnma.xyz/boinc/team_display.php?teamid=2059</url>
+                    </gui_url>
+                </ifteam>
+            </gui_urls>
+            <sched_priority>-0.000000</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/rnma.xyz_boinc</project_dir>
+        </project>
+        <project>
+            <master_url>http://srbase.my-firewall.org/sr5/</master_url>
+            <project_name>SRBase</project_name>
+            <symstore></symstore>
+            <user_name>MischaR</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1665389224.000000</cpid_time>
+            <user_total_credit>321720.000000</user_total_credit>
+            <user_expavg_credit>8422.511409</user_expavg_credit>
+            <user_create_time>1665389224.000000</user_create_time>
+            <rpc_seqno>220</rpc_seqno>
+            <userid>2931</userid>
+            <teamid>205</teamid>
+            <hostid>222497</hostid>
+            <host_total_credit>165780.000000</host_total_credit>
+            <host_expavg_credit>8274.159441</host_expavg_credit>
+            <host_create_time>1668676335.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669457456.612339</min_rpc_time>
+            <next_rpc_time>0.000000</next_rpc_time>
+            <rec>623.778831</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>306199620.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>1.000000</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>243</njobs_success>
+            <njobs_error>0</njobs_error>
+            <elapsed_time>1030235.660137</elapsed_time>
+            <last_rpc_time>1669457449.612339</last_rpc_time>
+            <dont_use_dcf/>
+            <dont_request_more_work/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_pref>NVIDIA</no_rsc_pref>
+            <sched_priority>-0.004245</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/srbase.my-firewall.org_sr5</project_dir>
+        </project>
+        <project>
+            <master_url>https://wuprop.boinc-af.org/</master_url>
+            <project_name>WUProp@Home</project_name>
+            <symstore></symstore>
+            <user_name>MischaR</user_name>
+            <team_name>Antarctic Crunchers</team_name>
+            <host_venue></host_venue>
+            <email_hash>8f0971edda95eaf173d10f68e52f05ac</email_hash>
+            <cross_project_id>10f499609339f4017dbc8e58cd16b554</cross_project_id>
+            <external_cpid>6639cb3c93eff6f236963c426e2b2416</external_cpid>
+            <cpid_time>1657012905.000000</cpid_time>
+            <user_total_credit>25540.000000</user_total_credit>
+            <user_expavg_credit>134.095586</user_expavg_credit>
+            <user_create_time>1657012905.000000</user_create_time>
+            <rpc_seqno>6437</rpc_seqno>
+            <userid>134432</userid>
+            <teamid>38984</teamid>
+            <hostid>242806</hostid>
+            <host_total_credit>6256.000000</host_total_credit>
+            <host_expavg_credit>43.805153</host_expavg_credit>
+            <host_create_time>1657012917.000000</host_create_time>
+            <nrpc_failures>0</nrpc_failures>
+            <master_fetch_failures>0</master_fetch_failures>
+            <min_rpc_time>1669456601.142174</min_rpc_time>
+            <next_rpc_time>1669460194.142174</next_rpc_time>
+            <rec>0.095200</rec>
+            <rec_time>1669458231.967230</rec_time>
+            <resource_share>100.000000</resource_share>
+            <disk_usage>732687.000000</disk_usage>
+            <disk_share>60926519748.694283</disk_share>
+            <desired_disk_usage>0.000000</desired_disk_usage>
+            <duration_correction_factor>1.000000</duration_correction_factor>
+            <sched_rpc_pending>0</sched_rpc_pending>
+            <send_time_stats_log>0</send_time_stats_log>
+            <send_job_log>0</send_job_log>
+            <njobs_success>3130</njobs_success>
+            <njobs_error>1</njobs_error>
+            <elapsed_time>11541434.372608</elapsed_time>
+            <last_rpc_time>1669456594.142174</last_rpc_time>
+            <dont_use_dcf/>
+            <non_cpu_intensive/>
+            <rsc_backoff_time>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>CPU</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <rsc_backoff_time>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_time>
+            <rsc_backoff_interval>
+                <name>NVIDIA</name>
+                <value>0.000000</value>
+            </rsc_backoff_interval>
+            <no_rsc_apps>NVIDIA</no_rsc_apps>
+            <gui_urls>
+
+                <gui_url>
+                    <name>Your account</name>
+                    <description>View your account information and credit totals</description>
+                    <url>https://wuprop.boinc-af.org/home.php</url>
+                </gui_url>
+                <ifteam>
+                    <gui_url>
+                        <name>Team</name>
+                        <description>Info about Antarctic Crunchers</description>
+                        <url>https://wuprop.boinc-af.org/team_display.php?teamid=38984</url>
+                    </gui_url>
+                </ifteam>
+                <gui_url>
+                    <name>Forum</name>
+                    <description>Get help about WUProp@home</description>
+                    <url>https://wuprop.boinc-af.org/forum_index.php</url>
+                </gui_url>
+                <gui_url>
+                    <name>Results</name>
+                    <description>View data collected by the project</description>
+                    <url>https://wuprop.boinc-af.org/results.html</url>
+                </gui_url>
+            </gui_urls>
+            <sched_priority>-0.000002</sched_priority>
+            <project_files_downloaded_time>0.000000</project_files_downloaded_time>
+            <project_dir>C:\ProgramData\BOINC/projects/wuprop.boinc-af.org</project_dir>
+        </project>
+    </projects>
+</boinc_gui_rpc_reply>
