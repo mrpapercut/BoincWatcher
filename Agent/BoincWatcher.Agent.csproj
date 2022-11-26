@@ -31,6 +31,10 @@
     <None Include="C:\workspace\tmp\BoincWatcher\.editorconfig" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\BoincWatcher.Domain.csproj" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
