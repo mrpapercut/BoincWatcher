@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace BoincManager.Server.Models; 
-public class Task {
+public class Result {
     public int Id { get; set; }
     public string Name { get; set; }
 
