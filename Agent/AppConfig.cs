@@ -1,7 +1,7 @@
 ﻿using Microsoft.Win32;
 using Microsoft.Extensions.Configuration;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 
 public class AppConfig {
     public string BoincDataFolder { get; protected set; } // Contains projects

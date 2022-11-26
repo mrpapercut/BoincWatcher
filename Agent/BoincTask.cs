@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 public class BoincTask {
     public string? Name { get; set; }
     public string? WUName { get; set; }
