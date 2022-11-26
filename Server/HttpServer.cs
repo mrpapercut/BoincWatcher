@@ -3,7 +3,7 @@ using System.Net;
 using System.IO;
 using System.Text.Json;
 using System.Runtime.Serialization.Json;
-using BoincManager.Server.Objects;
+using BoincManager.Server.Objects.JSON;
 
 namespace BoincManager.Server;
 

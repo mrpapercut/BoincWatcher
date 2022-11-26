@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 
-using BoincManager.Server.Objects;
+using BoincManager.Server.Objects.JSON;
 
 namespace BoincManager.Server;
 public class DBConnection {

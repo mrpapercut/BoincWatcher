@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
 using System.Text.Json;
 
-namespace BoincManager.Server.Objects; 
+namespace BoincManager.Server.Objects.JSON;
 
 [DataContract]
 public class BoincTask {
