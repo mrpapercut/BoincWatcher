@@ -17,4 +17,8 @@
     <Folder Include="EntityFramework\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\BoincWatcher.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
