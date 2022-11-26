@@ -5,12 +5,12 @@ using System.Text;
 using System.Text.Json;
 using System.Timers;
 using System.Xml.Linq;
-using BoincManager.Watcher.Logger;
-using BoincWatcher.Agent.Models;
+using BoincWatcher.Domain.Models;
+using BoincWatcher.Agent.Logger;
 
 using Timer = System.Timers.Timer;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 
 public class StateJson {
     public float gpuUsage { get; set; }
@@ -78,11 +78,14 @@ public class Startup {
     }
 
     private async void OnTasksElapsedTime(object? source, ElapsedEventArgs e) {
-        
+        /*this.BoincActions.GetResults();*/
+        /*this.BoincActions.GetProjects();*/
+        /*this.BoincActions.GetOldResults();*/
     }
 
     private async void OnStateElapsedTime(object? source, ElapsedEventArgs e) {
         Console.WriteLine("OnStateElapsedTime");
+        /*
         Dictionary<int, float> cpuUsage = this.Performance.GetCPUUsage();
         // float gpuUsage = Performance.GetGPUUsage();
 
@@ -94,17 +97,51 @@ public class Startup {
         string stateJsonString = JsonSerializer.Serialize<StateJson>(stateJson);
 
         Console.WriteLine(stateJsonString);
+        */
 
         try {
             ClientState clientState = await this.BoincActions.GetState();
 
-            Console.WriteLine(clientState.hostInfo.ToJSON());
+            Console.WriteLine("{");
+            Console.WriteLine($"\"hostInfo\": {clientState.globalPreferences.ToJSON()},");
+            Console.WriteLine($"\"netStats\": {clientState.netStats.ToJSON()},");
+            Console.WriteLine($"\"timeStats\": {clientState.timeStats.ToJSON()},");
+
+            Console.Write($"\"projects\": [");
+            List<string> projects = new List<string>();
             foreach (Project p in clientState.projects) {
-                Console.WriteLine(p.ToJSON());
+                projects.Add(p.ToJSON());
             }
+            Console.Write(string.Join(",\n", projects.ToArray()));
+            Console.WriteLine("],");
+
+            Console.Write($"\"apps\": [");
+            List<string> apps = new List<string>();
             foreach (App a in clientState.apps) {
-                Console.WriteLine(a.ToJSON());
+                apps.Add(a.ToJSON());
             }
+            Console.Write(string.Join(",\n", apps.ToArray()));
+            Console.WriteLine("],");
+
+            Console.Write($"\"app_versions\": [");
+            List<string> appversions = new List<string>();
+            foreach (AppVersion av in clientState.appVersions) {
+                appversions.Add(av.ToJSON());
+            }
+            Console.Write(string.Join(",\n", appversions.ToArray()));
+            Console.WriteLine("],");
+
+            Console.Write($"\"workunits\": [");
+            List<string> wus = new List<string>();
+            foreach (WorkUnit wu in clientState.workUnits) {
+                wus.Add(wu.ToJSON());
+            }
+            Console.Write(string.Join(",\n", wus.ToArray()));
+            Console.WriteLine("],");
+
+            Console.WriteLine($"\"globalPreferences\": {clientState.globalPreferences.ToJSON()}");
+
+            Console.WriteLine("}");
 
         } catch (Exception ex) {
             Console.WriteLine($"Error: {ex}");

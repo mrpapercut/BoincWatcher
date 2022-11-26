@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 public class FolderWatcher {
     private AppConfig AppConfig;
 

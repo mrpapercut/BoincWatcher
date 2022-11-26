@@ -1,6 +1,4 @@
-﻿using BoincWatcher.Agent;
-using BoincWatcher.Agent.Models;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Globalization;
 using System.Net;
 using System.Net.Sockets;
@@ -9,7 +7,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-namespace BoincManager.Watcher;
+using BoincWatcher.Domain.Models;
+
+namespace BoincWatcher.Agent;
 public class BoincActions {
     private AppConfig AppConfig;
 
@@ -22,7 +22,7 @@ public class BoincActions {
     public async Task<string> CallSocket(string command) {
         string cleanResponse = "";
 
-        IPEndPoint ipEndPoint = new(IPAddress.Parse("127.0.0.1"), 31416);
+        IPEndPoint ipEndPoint = new(IPAddress.Parse("127.0.0.1"), 31418);
 
         using (Socket client = new(ipEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp)) {
             await client.ConnectAsync(ipEndPoint);
@@ -74,6 +74,24 @@ public class BoincActions {
         } catch (Exception ex) {
             throw;
         }
+    }
+
+    public async void GetResults() {
+        string response = await CallSocket("<get_results/>\n");
+
+        Console.WriteLine(response);
+    }
+
+    public async void GetProjects() {
+        string response = await CallSocket("<get_project_status/>\n");
+
+        Console.WriteLine(response);
+    }
+
+    public async void GetOldResults() {
+        string response = await CallSocket("<get_old_results/>\n");
+
+        Console.WriteLine(response);
     }
 
     public void HandleGenefer(object sender, FileSystemEventArgs e, string filecontents) {

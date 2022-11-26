@@ -1,6 +1,7 @@
-﻿using System.Text.RegularExpressions;
+﻿using BoincWatcher.Domain.Models;
+using System.Text.RegularExpressions;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 public class AppUtils {
     public static void LogToFile(string message, string filename = "app_log.txt") {
         string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";
@@ -39,5 +40,19 @@ public class AppUtils {
         string dateInput = $"{year}-{month}-{day} {hour}:{minutes}:{seconds}";
 
         return DateTime.Parse(dateInput);
+    }
+
+    public static DateTime ParseDateFloat(float dateflt) {
+        DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds((int)dateflt);
+
+        DateTime dateTime = dateTimeOffset.UtcDateTime;
+
+        return dateTime;
+    }
+
+    public static DateTimeOffset ParsePartialDateFloat(float dateflt) {
+        DateTimeOffset dateTimeOffset = DateTimeOffset.FromUnixTimeSeconds((int)dateflt);
+
+        return dateTimeOffset;
     }
 }

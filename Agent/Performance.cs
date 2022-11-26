@@ -2,7 +2,7 @@
 using System.Runtime.Versioning;
 
 [assembly: SupportedOSPlatform("windows")]
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 
 public class Performance {
     float[]? cpuCoreUsage { get; set; }

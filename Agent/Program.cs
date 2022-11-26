@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace BoincManager.Watcher;
+namespace BoincWatcher.Agent;
 
 class Program {
     public static Task Main(string[] args) 

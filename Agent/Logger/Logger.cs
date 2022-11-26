@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BoincManager.Watcher.Logger;
+namespace BoincWatcher.Agent.Logger;
 public class Logger {
     public void Log(string message, string filename = "app_log.txt") {
         string path = AppDomain.CurrentDomain.BaseDirectory + "\\Logs";

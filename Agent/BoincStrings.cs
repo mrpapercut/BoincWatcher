@@ -1,4 +1,5 @@
-﻿namespace BoincManager.Watcher;
+﻿namespace BoincWatcher.Agent;
+
 public class BoincStrings {
     public static string[] ResultClientState = {
         "new",
